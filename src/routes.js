@@ -29,6 +29,6 @@ routes.post('/signup', upload.single('avatar'), UserController.store)
 
 routes.get('/app/logout', SessionController.destroy)
 
-routes.get('files/:file', FileController.show)
+routes.get('/files/:file', FileController.show)
 
 module.exports = routes
